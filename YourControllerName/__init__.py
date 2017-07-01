@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 
 import Live
-from YourControllerName import YourControllerName
+from USB_X_Session import USB_X_Session
 
 def create_instance(c_instance):
     ' Creates and returns the APC20 script '
-    return YourControllerName(c_instance)
+    return USB_X_Session(c_instance)
 
 
 # local variables:

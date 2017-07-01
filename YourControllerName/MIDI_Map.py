@@ -45,10 +45,6 @@ DEVICEBANK = (-1, #Bank 1 #All 8 banks must be assigned to positive values in or
               -1, #Bank 2
               -1, #Bank 3
               -1, #Bank 4
-              -1, #Bank 5
-              -1, #Bank 6
-              -1, #Bank 7
-              -1, #Bank 8
               )
 
 # Arrangement View Controls
@@ -56,8 +52,8 @@ SEEKFWD = -1 #Seek forward
 SEEKRWD = -1 #Seek rewind
 
 # Session Navigation (aka "red box")
-SESSIONLEFT = -1 #Session left
-SESSIONRIGHT = -1 #Session right
+SESSIONLEFT = 44 #Session left
+SESSIONRIGHT = 45 #Session right
 SESSIONUP = -1 #Session up
 SESSIONDOWN = -1 #Session down
 ZOOMUP = -1 #Session Zoom up
@@ -79,10 +75,6 @@ SCENELAUNCH = (-1, #Scene 1 Launch
                -1, #Scene 2
                -1, #Scene 3
                -1, #Scene 4
-               -1, #Scene 5
-               -1, #Scene 6
-               -1, #Scene 7
-               -1, #Scene 8
                )
 
 # Clip Launch / Stop
@@ -90,15 +82,11 @@ SELCLIPLAUNCH = -1 #Selected clip launch
 STOPALLCLIPS = -1 #Stop all clips
 
 # 8x8 Matrix note assignments
-# Track no.:     1   2   3   4   5   6   7   8
-CLIPNOTEMAP = ((-1, -1, -1, -1, -1, -1, -1, -1), #Row 1
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 2
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 3
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 4
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 5
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 6
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 7
-               (-1, -1, -1, -1, -1, -1, -1, -1), #Row 8
+# Track no.:     1   2   3   4
+CLIPNOTEMAP = ((-1, -1, -1, -1), #Row 1
+               (-1, -1, -1, -1), #Row 2
+               (-1, -1, -1, -1), #Row 3
+               (-1, -1, -1, -1), #Row 4
                )
 
 # Track Control
@@ -107,46 +95,26 @@ TRACKSTOP = (-1, #Track 1 Clip Stop
              -1, #Track 2
              -1, #Track 3
              -1, #Track 4
-             -1, #Track 5
-             -1, #Track 6
-             -1, #Track 7
-             -1, #Track 8
              )
 TRACKSEL = (-1, #Track 1 Select
             -1, #Track 2
             -1, #Track 3
-            -1, #Track 4
-            -1, #Track 5
-            -1, #Track 6
-            -1, #Track 7
-            -1, #Track 8
+            -1, #Track 4			
             )
 TRACKMUTE = (-1, #Track 1 On/Off
              -1, #Track 2
              -1, #Track 3
              -1, #Track 4
-             -1, #Track 5
-             -1, #Track 6
-             -1, #Track 7
-             -1, #Track 8
              )
-TRACKSOLO = (-1, #Track 1 Solo
-             -1, #Track 2
-             -1, #Track 3
-             -1, #Track 4
-             -1, #Track 5
-             -1, #Track 6
-             -1, #Track 7
-             -1, #Track 8
+TRACKSOLO = (46, #Track 1 Solo
+             43, #Track 2
+             56, #Track 3
+             57, #Track 4
              )
-TRACKREC = (-1, #Track 1 Record
-            -1, #Track 2
-            -1, #Track 3
-            -1, #Track 4
-            -1, #Track 5
-            -1, #Track 6
-            -1, #Track 7
-            -1, #Track 8
+TRACKREC = (70, #Track 1 Record
+            58, #Track 2
+            69, #Track 3
+            59, #Track 4
             )
 
 
@@ -169,61 +137,41 @@ TEMPO_TOP = 180.0 # Upper limit of tempo control in BPM (max is 999)
 TEMPO_BOTTOM = 100.0 # Lower limit of tempo control in BPM (min is 0)
 
 TEMPOCONTROL = -1 #Tempo control CC assignment; control range is set above
-MASTERVOLUME = -1 #Master track volume
+MASTERVOLUME = 17 #Master track volume
 CUELEVEL = -1 #Cue level control
 CROSSFADER = -1 #Crossfader control
 
-TRACKVOL = (-1, #Track 1 Volume
-            -1, #Track 2
-            -1, #Track 3
-            -1, #Track 4
-            -1, #Track 5
-            -1, #Track 6
-            -1, #Track 7
-            -1, #Track 8
+TRACKVOL = (12, #Track 1 Volume
+            11, #Track 2
+            14, #Track 3
+            15, #Track 4
             )
-TRACKPAN = (-1, #Track 1 Pan
-            -1, #Track 2
-            -1, #Track 3
-            -1, #Track 4
-            -1, #Track 5
-            -1, #Track 6
-            -1, #Track 7
-            -1, #Track 8
+TRACKPAN = (26, #Track 1 Pan
+            29, #Track 2
+            36, #Track 3
+            33, #Track 4
             )
 TRACKSENDA = (-1, #Track 1 Send A
               -1, #Track 2
               -1, #Track 3
               -1, #Track 4
-              -1, #Track 5
-              -1, #Track 6
-              -1, #Track 7
-              -1, #Track 8
               )
 TRACKSENDB = (-1, #Track 1 Send B
               -1, #Track 2
               -1, #Track 3
               -1, #Track 4
-              -1, #Track 5
-              -1, #Track 6
-              -1, #Track 7
-              -1, #Track 8
               )
 TRACKSENDC = (-1, #Track 1 Send C
               -1, #Track 2
               -1, #Track 3
               -1, #Track 4
-              -1, #Track 5
-              -1, #Track 6
-              -1, #Track 7
-              -1, #Track 8
               )
-PARAMCONTROL = (-1, #Param 1 #All 8 params must be assigned to positive values in order for param control to work
-                -1, #Param 2
-                -1, #Param 3
-                -1, #Param 4
-                -1, #Param 5
-                -1, #Param 6
-                -1, #Param 7
-                -1, #Param 8
+PARAMCONTROL = (24, #Param 1 #All 8 params must be assigned to positive values in order for param control to work
+                27, #Param 2
+                34, #Param 3
+                31, #Param 4
+				25, #Param 5
+				28, #Param 6
+				35, #Param 7
+				32, #Param 8
                 )
